@@ -65,7 +65,6 @@ class MainTest {
 
    @ParameterizedTest
    @MethodSource("source")
-//   @ValueSource(strings = { "data.json", "data6.json" })
     public void readString(String fileName, String expected) {
        //act
        String result = sut.readString(fileName);
